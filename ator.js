@@ -5,7 +5,7 @@ let yAtor = 367;
 let alturaAtor = 30;
 let larguraAtor = 30;
 let colisao = false;
-let meusPontos = 0
+const meusPontos = 0
 
 function mostraAtor(){
   image(imagemDoAtor, xAtor, yAtor, alturaAtor, larguraAtor);
@@ -53,7 +53,7 @@ function marcaPonto(){
   if (yAtor <= 7){
     somPonto.play()
     somPonto.setVolume(1.2)
-    meusPontos += 1;
+    meusPontos++;
     voltaPosicaoInicial();
   }
 }
